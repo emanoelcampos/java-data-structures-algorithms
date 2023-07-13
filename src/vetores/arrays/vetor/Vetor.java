@@ -62,6 +62,22 @@ public class Vetor {
         return false;
     }
 
+    public boolean adiciona(int posicao, String elemento) {
+        if(!(posicao >= 0 && posicao < elementos.length)){
+            throw new IllegalArgumentException("Posição inválida!");
+        }
+
+        //mover todos o elementos
+        for(int i = this.tamanho - 1; i >= posicao; i--) {
+            this.elementos[i + 1] = this.elementos[i];
+        }
+
+        this.elementos[posicao] = elemento;
+        this.tamanho++;
+
+        return false;
+    }
+
     public int busca(String elemento) {
         for(int i = 0; i < this.tamanho; i++){
             if(this.elementos[i].equals(elemento)){
