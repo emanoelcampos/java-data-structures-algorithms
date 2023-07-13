@@ -1,7 +1,5 @@
 package vetores.arrays.vetor;
 
-import java.util.Arrays;
-
 public class Vetor {
 
     private String[] elementos;
