@@ -105,6 +105,10 @@ public class Lista<T> {
         this.tamanho--;
     }
 
+    public void remove(T elemento) {
+        this.remove(this.busca(elemento));
+    }
+
     public boolean contem(T elemento) {
         return busca(elemento) > -1; // >= 0
     }
