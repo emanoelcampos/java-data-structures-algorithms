@@ -104,4 +104,8 @@ public class Lista<T> {
 
         this.tamanho--;
     }
+
+    public boolean contem(T elemento) {
+        return busca(elemento) > -1; // >= 0
+    }
 }
