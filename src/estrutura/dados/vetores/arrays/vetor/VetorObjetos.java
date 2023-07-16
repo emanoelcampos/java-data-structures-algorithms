@@ -1,4 +1,4 @@
-package vetores.arrays.vetor;
+package estrutura.dados.vetores.arrays.vetor;
 
 public class VetorObjetos {
 

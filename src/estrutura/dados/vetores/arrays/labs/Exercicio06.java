@@ -1,7 +1,7 @@
-package vetores.arrays.labs;
+package estrutura.dados.vetores.arrays.labs;
 
-import vetores.arrays.teste.Contato;
-import vetores.arrays.vetor.Lista;
+import estrutura.dados.vetores.arrays.teste.Contato;
+import estrutura.dados.vetores.arrays.vetor.Lista;
 
 import java.util.Scanner;
 
@@ -26,13 +26,13 @@ public class Exercicio06 {
             switch (opcao) {
                 case 1 -> adicionarContatoFinal(scan, listaContato);
                 case 2 -> adicionarContatoPosicao(scan, listaContato);
-                case 3 ->
+                //case 3 ->
             }
         }
 
         System.out.println("Usuário digitou 0, programa terminado.");
 
-        //criarContatosDinamicamente(listaContato, 30);
+        criarContatosDinamicamente(listaContato, 30);
 
     }
 

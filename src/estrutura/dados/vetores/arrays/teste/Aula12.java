@@ -1,4 +1,4 @@
-package vetores.arrays.teste;
+package estrutura.dados.vetores.arrays.teste;
 
 import java.util.ArrayList;
 
