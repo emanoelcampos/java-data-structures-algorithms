@@ -73,4 +73,8 @@ public class EstruturaEstatica<T> {
 
         return sb.toString();
     }
+
+    public boolean estaVazio() {
+        return this.tamanho == 0;
+    }
 }
