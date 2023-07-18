@@ -12,7 +12,7 @@ No decorrer do curso, iremos explorar os conceitos teóricos fundamentais por tr
 Introdução aos arrays unidimensionais, acesso a elementos, inserção e remoção de elementos, busca e ordenação.
 ### [Pilhas](https://github.com/emanoelcampos/java-data-structures-algorithms/tree/master/src/pilhas):
 Compreensão das pilhas, conceito de LIFO (Last In, First Out), operações de empilhamento e desempilhamento, aplicação em problemas práticos.
-### [Filas]():
+### [Filas](https://github.com/emanoelcampos/java-data-structures-algorithms/tree/master/src/estrutura/dados/filas):
 Conceito de filas, FIFO (First In, First Out), operações de enfileiramento e desenfileiramento, aplicação em situações reais.
 ### [Lista Encadeada]():
 Implementação de listas encadeadas simples e duplamente encadeadas, inserção e remoção de elementos, iteração na lista.
