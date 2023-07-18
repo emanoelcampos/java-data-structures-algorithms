@@ -1,6 +1,6 @@
-package estrutura.dados.vetores.arrays.labs;
+package estrutura.dados.vetores.labs;
 
-import estrutura.dados.vetores.arrays.vetor.Lista;
+import estrutura.dados.vetores.vetor.Lista;
 
 public class Exercicio02 {
 

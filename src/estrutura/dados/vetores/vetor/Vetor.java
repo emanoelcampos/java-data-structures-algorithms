@@ -1,12 +1,12 @@
-package estrutura.dados.vetores.arrays.vetor;
+package estrutura.dados.vetores.vetor;
 
-public class VetorObjetos {
+public class Vetor {
 
-    private Object[] elementos;
+    private String[] elementos;
     private int tamanho;
 
-    public VetorObjetos(int capacidade){
-        this.elementos = new Object[capacidade];
+    public Vetor(int capacidade){
+        this.elementos = new String[capacidade];
         this.tamanho = 0;
     }
 
@@ -32,7 +32,26 @@ public class VetorObjetos {
         return sb.toString();
     }
 
-    public boolean adiciona(Object elemento) {
+    /*public void adiciona(String elemento) {
+        for(int i = 0; i < this.elementos.length; i++){
+            if(elementos[i] == null) {
+                elementos[i] = elemento;
+                break;
+            }
+        }
+    }*/
+
+    /*public void adiciona(String elemento) throws Exception {
+
+        if(this.tamanho < this.elementos.length){
+            this.elementos[this.tamanho] = elemento;
+            this.tamanho++;
+        } else {
+            throw new Exception("Vetor jáestá cheio, não é possível adicionar mais elementos");
+        }
+    }*/
+
+    public boolean adiciona(String elemento) {
         this.aumentaCapacidade();
         if(this.tamanho < this.elementos.length){
             this.elementos[this.tamanho] = elemento;
@@ -42,7 +61,7 @@ public class VetorObjetos {
         return false;
     }
 
-    public boolean adiciona(int posicao, Object elemento) {
+    public boolean adiciona(int posicao, String elemento) {
         if(!(posicao >= 0 && posicao < elementos.length)){
             throw new IllegalArgumentException("Posição inválida!");
         }
@@ -60,7 +79,7 @@ public class VetorObjetos {
         return false;
     }
 
-    public int busca(Object elemento) {
+    public int busca(String elemento) {
         for(int i = 0; i < this.tamanho; i++){
             if(this.elementos[i].equals(elemento)){
                 return i;
@@ -69,7 +88,7 @@ public class VetorObjetos {
         return -1;
     }
 
-    public Object busca(int posicao) {
+    public String busca(int posicao) {
         if(!(posicao >= 0 && posicao < elementos.length)){
             throw new IllegalArgumentException("Posição inválida!");
         }
@@ -78,7 +97,7 @@ public class VetorObjetos {
 
     private void aumentaCapacidade(){
         if(this.tamanho == this.elementos.length) {
-            Object[] elementosNovos = new String[this.elementos.length * 2];
+            String[] elementosNovos = new String[this.elementos.length * 2];
             for (int i = 0; i < this.elementos.length; i++) {
                 elementosNovos[i] = this.elementos[i];
             }
@@ -97,4 +116,5 @@ public class VetorObjetos {
 
         this.tamanho--;
     }
+
 }

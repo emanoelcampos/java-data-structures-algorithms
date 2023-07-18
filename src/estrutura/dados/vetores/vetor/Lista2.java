@@ -1,4 +1,4 @@
-package estrutura.dados.vetores.arrays.vetor;
+package estrutura.dados.vetores.vetor;
 
 import estrutura.dados.base.EstruturaEstatica;
 

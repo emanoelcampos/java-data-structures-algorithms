@@ -1,6 +1,6 @@
-package estrutura.dados.vetores.arrays.teste;
+package estrutura.dados.vetores.teste;
 
-import estrutura.dados.vetores.arrays.vetor.Lista;
+import estrutura.dados.vetores.vetor.Lista;
 
 public class Aula11 {
 

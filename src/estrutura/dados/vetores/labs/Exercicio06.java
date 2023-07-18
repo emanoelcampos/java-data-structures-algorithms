@@ -1,7 +1,7 @@
-package estrutura.dados.vetores.arrays.labs;
+package estrutura.dados.vetores.labs;
 
-import estrutura.dados.vetores.arrays.teste.Contato;
-import estrutura.dados.vetores.arrays.vetor.Lista;
+import estrutura.dados.vetores.teste.Contato;
+import estrutura.dados.vetores.vetor.Lista;
 
 import java.util.Scanner;
 
