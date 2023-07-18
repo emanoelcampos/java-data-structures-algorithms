@@ -77,4 +77,16 @@ public class EstruturaEstatica<T> {
     public boolean estaVazio() {
         return this.tamanho == 0;
     }
+
+    protected void remove(int posicao) {
+        if(!(posicao >= 0 && posicao < elementos.length)){
+            throw new IllegalArgumentException("Posição inválida!");
+        }
+
+        for(int i = posicao; i < this.tamanho - 1; i++){
+            this.elementos[i] = this.elementos[i + 1];
+        }
+
+        this.tamanho--;
+    }
 }
