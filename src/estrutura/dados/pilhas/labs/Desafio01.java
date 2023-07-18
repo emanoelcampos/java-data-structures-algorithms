@@ -7,49 +7,48 @@ public class Desafio01 {
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-
         Stack<Character> stack = new Stack<>();
 
+        Scanner scan = new Scanner(System.in);
         System.out.println("Digite uma palavra:");
-
         String palavra = scan.next();
+
+        for(int i = 0; i < palavra.length(); i++) {
+            stack.push(palavra.charAt(i));
+        }
+
+        StringBuilder palavraDesempilhada = new StringBuilder();
+        for(int i = 0; i < palavra.length(); i++) {
+            palavraDesempilhada.insert(0, stack.pop());
+        }
+
+        StringBuilder palavraInversa = palavraDesempilhada.reverse();
+
+        boolean ePolindromo = palavraInversa.toString().equalsIgnoreCase(palavra);
+
+        System.out.println(ePolindromo);
+
+    }
+
+    // ALTERNATIVA DO INSTRUTOR
+    public static boolean testaPalindromo(String palavra) {
+        Stack<Character> stack = new Stack<>();
 
         for(int i = 0; i < palavra.length(); i++) {
 
             stack.push(palavra.charAt(i));
         }
 
-        int metade = stack.size() / 2;
-        StringBuilder primeiraMetade = new StringBuilder();
-        StringBuilder segundaMetade = new StringBuilder();
+        String palavraInversa = "";
 
-        if(stack.size() % 2 == 0) {
-            for(int i = 0; i < metade; i++) {
-                primeiraMetade.insert(0, stack.pop());
-            }
-
-            for(int i = 0; i < metade; i++) {
-                segundaMetade.insert(0, stack.pop());
-            }
-
-        } else {
-            for(int i = 0; i < metade; i++) {
-                primeiraMetade.insert(0, stack.pop());
-            }
-
-            stack.pop();
-            for(int i = 0; i < metade; i++) {
-                segundaMetade.insert(0, stack.pop());
-            }
+        while(!stack.isEmpty()) {
+            palavraInversa += stack.pop();
         }
 
+        if(palavraInversa.equalsIgnoreCase(palavra)) {
+            return true;
+        }
 
-        segundaMetade.reverse();
-
-        boolean ePolindromo = primeiraMetade.toString().equalsIgnoreCase(segundaMetade.toString());
-
-        System.out.println(ePolindromo);
-
+        return false;
     }
 }
