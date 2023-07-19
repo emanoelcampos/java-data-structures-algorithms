@@ -14,7 +14,7 @@ Introdução aos arrays unidimensionais, acesso a elementos, inserção e remoç
 Compreensão das pilhas, conceito de LIFO (Last In, First Out), operações de empilhamento e desempilhamento, aplicação em problemas práticos.
 ### [Filas](https://github.com/emanoelcampos/java-data-structures-algorithms/tree/master/src/estrutura/dados/filas):
 Conceito de filas, FIFO (First In, First Out), operações de enfileiramento e desenfileiramento, aplicação em situações reais.
-### [Lista Encadeada]():
+### [Lista Encadeada](https://github.com/emanoelcampos/java-data-structures-algorithms/tree/master/src/estrutura/dados/listas):
 Implementação de listas encadeadas simples e duplamente encadeadas, inserção e remoção de elementos, iteração na lista.
 
 ## Minha jornada:
